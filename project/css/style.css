@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #621402;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url(/img/bg.jpg) no-repeat center / cover;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding-left: 57px;
+}
+.menu-item {
+  margin-right: 25px;
+}
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+.avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-left: 11px;
+}
+.user {
+  margin-left: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.film {
+  margin-top: 60px;
+  color: white;
+}
+.film-title-small {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
+}
+.film-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+}
+.film {
+  display: flex;
+  align-items: center;
+}
+.film-trailer {
+  margin: auto;
+}
+.film-details {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.time {
+  display: flex;
+  align-items: center;
+}
+.time-icon {
+  margin-right: 14px;
+}
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+}
+.rating-icon {
+  margin-right: 14px;
+}
+.session {
+  display: flex;
+  margin-top: 62px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.session-date-block {
+  display: flex;
+}
+.session-day-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  transition: background-color 0.2s;
+}
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+.session-month {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+}
+.session-day {
+  font-size: 30px;
+  line-height: 35px;
+}
+.session-week {
+  font-size: 19px;
+  line-height: 22px;
+}
+.session-day-item:hover {
+  background-color: #fe8e05;
+  color: #621402;
+}
+.select {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.select-cinema {
+  min-width: 470px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.scheme {
+  margin-bottom: 40px;
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.scheme path.active:hover,
+.scheme path.active {
+  fill: #fe8e05;
+}
+.scheme path.booked:hover,
+.scheme path.booked {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+.legend {
+  align-items: center;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 22px;
+  padding-bottom: 38px;
+}
+.legend svg {
+  margin-right: 10px;
+}
+.legend-label {
+  align-items: center;
+  display: flex;
+  color: rgba(255, 255, 255, 0.5);
+}
+.legend-free {
+  margin-right: 30px;
+}
+.legend-active {
+  margin-right: 30px;
+}
+.price {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-label {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+}
+.price-tag {
+  font-size: 52px;
+  line-height: 61px;
+}
+.button {
+  display: block;
+  background: #fe8e05;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 24px 52px;
+  text-decoration: none;
+}
